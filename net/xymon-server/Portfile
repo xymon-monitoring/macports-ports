@@ -183,6 +183,8 @@ Full install instructions here: http://trac.macports.org/wiki/howto/SetupXymonSe
 
 use_parallel_build  no
 
+default_variants        +snmp
+
 variant snmp description {add integrated SNMP support} {
     depends_lib-append      port:net-snmp
     configure.env-append    SNMP=1
